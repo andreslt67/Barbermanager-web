@@ -1,0 +1,918 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>barber-manager documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/vagrant.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">barber-manager documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>NavBarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/nav-bar/nav-bar.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Componente barra superior de navegacion</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-nav-bar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./nav-bar.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./nav-bar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#clienteAuntenticado">clienteAuntenticado</a>
+                            </li>
+                            <li>
+                                <a href="#token">token</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cerrarSesion">cerrarSesion</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#obtenerCliente">obtenerCliente</a>
+                            </li>
+                            <li>
+                                <a href="#openDialogIniciar">openDialogIniciar</a>
+                            </li>
+                            <li>
+                                <a href="#openDialogRegistrar">openDialogRegistrar</a>
+                            </li>
+                            <li>
+                                <a href="#toPerfil">toPerfil</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#drawer">drawer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialog: MatDialog, auntenticaJwt: <a href="../injectables/AuntenticadorJWTService.html">AuntenticadorJWTService</a>, route: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, servicioUsuario: <a href="../injectables/UsuarioAuntenticadorService.html">UsuarioAuntenticadorService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Metodo constructor de la clase</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado de de ventanas dialog.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>auntenticaJwt</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuntenticadorJWTService.html" target="_self" >AuntenticadorJWTService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado para adminstrar los tokens.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado para la navegacion.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>servicioUsuario</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsuarioAuntenticadorService.html" target="_self" >UsuarioAuntenticadorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado de usuarios.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="drawer"></a>
+                        <b>drawer</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatSidenav</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:33</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Navegador lateral obtenido del padre</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cerrarSesion"></a>
+                    <span class="name">
+                        <b>
+                            cerrarSesion
+                        </b>
+                        <a href="#cerrarSesion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cerrarSesion()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que se encarga de eliminar el token del usuario y despues navegar hacia el componente inicio.component.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo OnInit que se encarga de obtener el token y el usuario auntenticado al estar listos los componentes angular.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="obtenerCliente"></a>
+                    <span class="name">
+                        <b>
+                            obtenerCliente
+                        </b>
+                        <a href="#obtenerCliente"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>obtenerCliente()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que se encarga de obtener un usuario auntenticado.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialogIniciar"></a>
+                    <span class="name">
+                        <b>
+                            openDialogIniciar
+                        </b>
+                        <a href="#openDialogIniciar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialogIniciar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que se encarga de abrir una ventana dialog del componente DialogIniciarComponent.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialogRegistrar"></a>
+                    <span class="name">
+                        <b>
+                            openDialogRegistrar
+                        </b>
+                        <a href="#openDialogRegistrar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialogRegistrar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que se encarga de navegar al componente dialog-registra.component.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toPerfil"></a>
+                    <span class="name">
+                        <b>
+                            toPerfil
+                        </b>
+                        <a href="#toPerfil"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toPerfil()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que navega hacia el componente dialog-update.component.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="clienteAuntenticado"></a>
+                        <span class="name">
+                            <b>
+                            clienteAuntenticado</b>
+                            <a href="#clienteAuntenticado"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Cliente.html" target="_self" >Cliente</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>usuario auntenticado</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="token"></a>
+                        <span class="name">
+                            <b>
+                            token</b>
+                            <a href="#token"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/nav-bar/nav-bar.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Token jwt de usuario</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { DialogIniciarComponent } from &#x27;../dialog-iniciar/dialog-iniciar.component&#x27;;
+import { Cliente } from &#x27;../interfaces/cliente&#x27;;
+import { AuntenticadorJWTService } from &#x27;../servicios/auntenticador-jwt.service&#x27;;
+import { UsuarioAuntenticadorService } from &#x27;../servicios/usuario-auntenticador.service&#x27;;
+import { MatSidenav } from &#x27;@angular/material/sidenav&#x27;;
+
+/**
+ * Componente barra superior de navegacion
+ */
+@Component({
+  selector: &#x27;app-nav-bar&#x27;,
+  templateUrl: &#x27;./nav-bar.component.html&#x27;,
+  styleUrls: [&#x27;./nav-bar.component.css&#x27;]
+})
+export class NavBarComponent implements OnInit {
+  
+  /**
+ * Token jwt de usuario
+ */
+  token: string;
+
+  /**
+ * usuario auntenticado
+ */
+  clienteAuntenticado: Cliente;
+
+  /**
+ * Navegador lateral obtenido del padre
+ */
+  @Input(&#x27;drawer&#x27;) drawer: MatSidenav;
+
+  /**
+ * Metodo constructor de la clase
+ *
+ * @param {UsuarioAuntenticadorService} servicioUsuario  Servicio inyectado de usuarios.
+ * @param {MatDialog} dialog Servicio inyectado de de ventanas dialog.
+ * @param {Router} route Servicio inyectado para la navegacion.
+ * @param {AuntenticadorJWTService} auntenticaJwt Servicio inyectado para adminstrar los tokens.
+ */
+  constructor(private dialog: MatDialog, private auntenticaJwt: AuntenticadorJWTService, private route: Router, private servicioUsuario: UsuarioAuntenticadorService) { 
+  }
+
+  /**
+ * Metodo OnInit que se encarga de obtener el token y el usuario auntenticado al estar listos los componentes angular.
+ */
+  ngOnInit(): void {
+    this.obtenerCliente();
+    this.token &#x3D; this.auntenticaJwt.recuperaJWT();
+  }
+
+  /**
+ * Metodo que se encarga de obtener un usuario auntenticado.
+ */
+  obtenerCliente() {
+    this.servicioUsuario.getUsuarioAutenticado().subscribe(data &#x3D;&gt; {
+      this.clienteAuntenticado &#x3D; data;
+    });
+  }
+
+  /**
+ * Metodo que se encarga de abrir una ventana dialog del componente DialogIniciarComponent.
+ */
+  openDialogIniciar(): void {
+    const dialogRef &#x3D; this.dialog.open(DialogIniciarComponent, {
+      width: &#x27;250px&#x27;
+    });
+    dialogRef.afterClosed().subscribe(result &#x3D;&gt; {
+      if (result &#x3D;&#x3D; true) {
+        this.token &#x3D; this.auntenticaJwt.recuperaJWT();
+        this.obtenerCliente();
+      }
+      console.log(&#x27;The dialog was closed&#x27;);
+    });
+  }
+
+    /**
+ * Metodo que se encarga de navegar al componente dialog-registra.component.
+ */
+  openDialogRegistrar(): void {
+    this.route.navigate([&#x27;/registrar&#x27;]);
+  }
+
+    /**
+ * Metodo que navega hacia el componente dialog-update.component.
+ */
+  toPerfil(): void {
+    this.route.navigate([&#x27;/perfil&#x27;]);
+  }
+
+    /**
+ * Metodo que se encarga de eliminar el token del usuario y despues navegar hacia el componente inicio.component.
+ */
+  cerrarSesion() {
+    this.auntenticaJwt.eliminaJWT();
+    this.token &#x3D; this.auntenticaJwt.recuperaJWT();
+    this.route.navigate([&#x27;/inicio&#x27;]);
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-toolbar class&#x3D;&quot;navBar&quot;&gt;
+  &lt;div *ngIf&#x3D;&quot;token !&#x3D; null&quot;&gt;
+    &lt;button mat-icon-button class&#x3D;&quot;example-icon&quot; (click)&#x3D;&quot;drawer.toggle()&quot; aria-label&#x3D;&quot;Example icon-button with menu icon&quot;&gt;
+      &lt;mat-icon&gt;menu&lt;/mat-icon&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;img src&#x3D;&quot;../../assets/img/barberLogo.png&quot; height&#x3D;&quot;40px&quot;&gt;
+  &lt;span&gt;Barber manager&lt;/span&gt;
+  &lt;span class&#x3D;&quot;example-spacer&quot;&gt;&lt;/span&gt;
+  &lt;div *ngIf&#x3D;&quot;token &#x3D;&#x3D; null&quot;&gt;
+    &lt;button mat-raised-button color&#x3D;&quot;basic&quot; (click)&#x3D;&quot;openDialogIniciar()&quot; aria-label&#x3D;&quot;Example icon-button with heart icon&quot;&gt;
+      Iniciar Sesión
+    &lt;/button&gt;
+    &lt;span class&#x3D;&quot;entrebtn&quot;&gt;--&lt;/span&gt;
+    &lt;button mat-raised-button color&#x3D;&quot;basic&quot; (click)&#x3D;&quot;openDialogRegistrar()&quot; aria-label&#x3D;&quot;Example icon-button with share icon&quot;&gt;
+      Registrarse
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div *ngIf&#x3D;&quot;token !&#x3D; null&quot;&gt;
+    &lt;span&gt;{{clienteAuntenticado.usuario}}&lt;/span&gt;
+    &lt;span class&#x3D;&quot;entrebtn&quot;&gt;--&lt;/span&gt;
+    &lt;button mat-icon-button [matMenuTriggerFor]&#x3D;&quot;menu&quot; aria-label&#x3D;&quot;Example icon-button with a menu&quot;&gt;
+      &lt;mat-icon&gt;more_vert&lt;/mat-icon&gt;
+    &lt;/button&gt;
+    &lt;mat-menu #menu&#x3D;&quot;matMenu&quot;&gt;
+      &lt;button mat-menu-item (click)&#x3D;&quot;toPerfil()&quot;&gt;
+        &lt;mat-icon&gt;build&lt;/mat-icon&gt;
+        &lt;span&gt;Configurar perfil&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button mat-menu-item (click)&#x3D;&quot;cerrarSesion()&quot;&gt;
+        &lt;mat-icon&gt;exit_to_app&lt;/mat-icon&gt;
+        &lt;span&gt;Cerrar sesión&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/mat-menu&gt;
+  &lt;/div&gt;
+&lt;/mat-toolbar&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./nav-bar.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-toolbar class="navBar">  <div *ngIf="token != null">    <button mat-icon-button class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">      <mat-icon>menu</mat-icon>    </button>  </div>  <img src="../../assets/img/barberLogo.png" height="40px">  <span>Barber manager</span>  <span class="example-spacer"></span>  <div *ngIf="token == null">    <button mat-raised-button color="basic" (click)="openDialogIniciar()" aria-label="Example icon-button with heart icon">      Iniciar Sesión    </button>    <span class="entrebtn">--</span>    <button mat-raised-button color="basic" (click)="openDialogRegistrar()" aria-label="Example icon-button with share icon">      Registrarse    </button>  </div>  <div *ngIf="token != null">    <span>{{clienteAuntenticado.usuario}}</span>    <span class="entrebtn">--</span>    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">      <mat-icon>more_vert</mat-icon>    </button>    <mat-menu #menu="matMenu">      <button mat-menu-item (click)="toPerfil()">        <mat-icon>build</mat-icon>        <span>Configurar perfil</span>      </button>      <button mat-menu-item (click)="cerrarSesion()">        <mat-icon>exit_to_app</mat-icon>        <span>Cerrar sesión</span>      </button>    </mat-menu>  </div></mat-toolbar></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BuscadorEstablecimientoComponent', 'selector': 'app-buscador-establecimiento'},{'name': 'BuscadorPeluqueroComponent', 'selector': 'app-buscador-peluquero'},{'name': 'CitaComponent', 'selector': 'app-cita'},{'name': 'DialogCitaComponent', 'selector': 'app-dialog-cita'},{'name': 'DialogIniciarComponent', 'selector': 'app-dialog-iniciar'},{'name': 'DialogRegistrarComponent', 'selector': 'app-dialog-registrar'},{'name': 'DialogResenaComponent', 'selector': 'app-dialog-resena'},{'name': 'DialogUpdateComponent', 'selector': 'app-dialog-update'},{'name': 'EstablecimientoComponent', 'selector': 'app-establecimiento'},{'name': 'FavoritoComponent', 'selector': 'app-favorito'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'ListaCitasComponent', 'selector': 'app-lista-citas'},{'name': 'ListaFavoritosComponent', 'selector': 'app-lista-favoritos'},{'name': 'ListaResenaComponent', 'selector': 'app-lista-resena'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'PeluqueroComponent', 'selector': 'app-peluquero'},{'name': 'PrincipalComponent', 'selector': 'app-principal'},{'name': 'ResenaComponent', 'selector': 'app-resena'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'NavBarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NavBarComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

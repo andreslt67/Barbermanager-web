@@ -1,0 +1,2081 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>barber-manager documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/vagrant.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">barber-manager documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PeluqueroComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/peluquero/peluquero.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Componente que se encarga de mostrar la interfaz del perfil de un peluquero.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/router/CanActivate" target="_blank" >CanActivate</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-peluquero</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./peluquero.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./peluquero.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#background">background</a>
+                            </li>
+                            <li>
+                                <a href="#citas">citas</a>
+                            </li>
+                            <li>
+                                <a href="#color">color</a>
+                            </li>
+                            <li>
+                                <a href="#fecha">fecha</a>
+                            </li>
+                            <li>
+                                <a href="#fotos">fotos</a>
+                            </li>
+                            <li>
+                                <a href="#idfav2">idfav2</a>
+                            </li>
+                            <li>
+                                <a href="#idfavorito">idfavorito</a>
+                            </li>
+                            <li>
+                                <a href="#minDate">minDate</a>
+                            </li>
+                            <li>
+                                <a href="#myFilter">myFilter</a>
+                            </li>
+                            <li>
+                                <a href="#peluqueria">peluqueria</a>
+                            </li>
+                            <li>
+                                <a href="#peluquero">peluquero</a>
+                            </li>
+                            <li>
+                                <a href="#resenas">resenas</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addEvent">addEvent</a>
+                            </li>
+                            <li>
+                                <a href="#canActivate">canActivate</a>
+                            </li>
+                            <li>
+                                <a href="#cargarDatosFotos">cargarDatosFotos</a>
+                            </li>
+                            <li>
+                                <a href="#cargarDatosPeluqueria">cargarDatosPeluqueria</a>
+                            </li>
+                            <li>
+                                <a href="#cargarDatosResenas">cargarDatosResenas</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#obtenerCita">obtenerCita</a>
+                            </li>
+                            <li>
+                                <a href="#obtenerDatosPeluquero">obtenerDatosPeluquero</a>
+                            </li>
+                            <li>
+                                <a href="#obtenerFavorito">obtenerFavorito</a>
+                            </li>
+                            <li>
+                                <a href="#openDialogResena">openDialogResena</a>
+                            </li>
+                            <li>
+                                <a href="#switchFavorito">switchFavorito</a>
+                            </li>
+                            <li>
+                                <a href="#toPeluqueria">toPeluqueria</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(servicioAlertas: <a href="../injectables/AlertasService.html">AlertasService</a>, rutaActiva: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, servicioPeluquero: <a href="../injectables/ServicioPeluquerosService.html">ServicioPeluquerosService</a>, servicioResena: <a href="../injectables/ServicioResenasService.html">ServicioResenasService</a>, servicioCitas: <a href="../injectables/ServicioCitasService.html">ServicioCitasService</a>, servicioFotos: <a href="../injectables/ServicioFotoService.html">ServicioFotoService</a>, dialog: MatDialog, servicioFav: <a href="../injectables/ServicioFavoritosService.html">ServicioFavoritosService</a>, route: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, servicioPeluqueria: <a href="../injectables/ServicioEstablecimientosService.html">ServicioEstablecimientosService</a>, servicioJWT: <a href="../injectables/AuntenticadorJWTService.html">AuntenticadorJWTService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/peluquero/peluquero.component.ts:83</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Metodo constructor de la clase</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>servicioAlertas</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertasService.html" target="_self" >AlertasService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado de alertas.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>rutaActiva</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Obtiene los parametros de la ruta.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>servicioPeluquero</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ServicioPeluquerosService.html" target="_self" >ServicioPeluquerosService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado de peluqueros.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>servicioResena</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ServicioResenasService.html" target="_self" >ServicioResenasService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado de reseñas.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>servicioCitas</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ServicioCitasService.html" target="_self" >ServicioCitasService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>servicioFotos</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ServicioFotoService.html" target="_self" >ServicioFotoService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado de fotos.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado para abrir ventanas dialog.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>servicioFav</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ServicioFavoritosService.html" target="_self" >ServicioFavoritosService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado de favoritos.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado para la navegacion.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>servicioPeluqueria</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ServicioEstablecimientosService.html" target="_self" >ServicioEstablecimientosService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado de establecimientos.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>servicioJWT</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuntenticadorJWTService.html" target="_self" >AuntenticadorJWTService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Servicio inyectado para adminstrar los tokens.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addEvent"></a>
+                    <span class="name">
+                        <b>
+                            addEvent
+                        </b>
+                        <a href="#addEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addEvent(event: MatDatepickerInputEvent<Date>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="275"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:275</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Evento que se llama al elegir una fecha en el calendario y muestra una lista de citas en funcion a la fecha elegida.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>MatDatepickerInputEvent&lt;Date&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>evento con los datos del formulario DatePicker.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canActivate"></a>
+                    <span class="name">
+                        <b>
+                            canActivate
+                        </b>
+                        <a href="#canActivate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>canActivate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo guardian que decide si se puede acceder o no a este componente</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Boolean true o false dependiendo si puedes acceder al componente o no</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cargarDatosFotos"></a>
+                    <span class="name">
+                        <b>
+                            cargarDatosFotos
+                        </b>
+                        <a href="#cargarDatosFotos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cargarDatosFotos(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que carga los datos de las fotos en la lista.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cargarDatosPeluqueria"></a>
+                    <span class="name">
+                        <b>
+                            cargarDatosPeluqueria
+                        </b>
+                        <a href="#cargarDatosPeluqueria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cargarDatosPeluqueria(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que carga los datos de la peluqueria desde el servicio.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cargarDatosResenas"></a>
+                    <span class="name">
+                        <b>
+                            cargarDatosResenas
+                        </b>
+                        <a href="#cargarDatosResenas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cargarDatosResenas(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que carga los datos de reseñas en la lista de navida.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo OnInit que se encarga de cargar los datos del peluquero al estar listo los componentes angular.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="obtenerCita"></a>
+                    <span class="name">
+                        <b>
+                            obtenerCita
+                        </b>
+                        <a href="#obtenerCita"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>obtenerCita(cita: <a href="../interfaces/Hora.html">Hora</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="238"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:238</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que abre una ventana dialog del componente DialogCitaComponent.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cita</td>
+                                    <td>
+                                                <code><a href="../interfaces/Hora.html" target="_self" >Hora</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="obtenerDatosPeluquero"></a>
+                    <span class="name">
+                        <b>
+                            obtenerDatosPeluquero
+                        </b>
+                        <a href="#obtenerDatosPeluquero"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>obtenerDatosPeluquero(peluquero: <a href="../interfaces/Peluquero.html">Peluquero</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que carga los datos del peluquero del servicio.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>peluquero</td>
+                                    <td>
+                                                <code><a href="../interfaces/Peluquero.html" target="_self" >Peluquero</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="obtenerFavorito"></a>
+                    <span class="name">
+                        <b>
+                            obtenerFavorito
+                        </b>
+                        <a href="#obtenerFavorito"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>obtenerFavorito(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que se encarga de comprobar si un favorito existe y devolverlo.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialogResena"></a>
+                    <span class="name">
+                        <b>
+                            openDialogResena
+                        </b>
+                        <a href="#openDialogResena"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialogResena()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que abre una ventana dialog del componente DialogResenaComponent.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="switchFavorito"></a>
+                    <span class="name">
+                        <b>
+                            switchFavorito
+                        </b>
+                        <a href="#switchFavorito"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>switchFavorito()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="219"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:219</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que elimina o guarda un peluquero en favoritos del usuario</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toPeluqueria"></a>
+                    <span class="name">
+                        <b>
+                            toPeluqueria
+                        </b>
+                        <a href="#toPeluqueria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toPeluqueria()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="266"
+                            class="link-to-prism">src/app/peluquero/peluquero.component.ts:266</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que navega hacia el componente establecimiento.component.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="background"></a>
+                        <span class="name">
+                            <b>
+                            background</b>
+                            <a href="#background"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>ThemePalette</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>undefined</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/peluquero/peluquero.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>variable que contiene el color de fondo del menu de pestañas.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="citas"></a>
+                        <span class="name">
+                            <b>
+                            citas</b>
+                            <a href="#citas"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Hora.html" target="_self" >Array&lt;Hora&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/peluquero/peluquero.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Lista de citas según el horario del peluquero.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="color"></a>
+                        <span class="name">
+                            <b>
+                            color</b>
+                            <a href="#color"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>ThemePalette</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;warn&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/peluquero/peluquero.component.ts:67</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Variable que contiene el color de las pestañas.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fecha"></a>
+                        <span class="name">
+                            <b>
+                            fecha</b>
+                            <a href="#fecha"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/peluquero/peluquero.component.ts:71</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Guarda la fecha elegida en el formulario temporalmente.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fotos"></a>
+                        <span class="name">
+                            <b>
+                            fotos</b>
+                            <a href="#fotos"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Foto.html" target="_self" >Array&lt;Foto&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/peluquero/peluquero.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Lista de fotos del peluquero.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="idfav2"></a>
+                        <span class="name">
+                            <b>
+                            idfav2</b>
+                            <a href="#idfav2"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/peluquero/peluquero.component.ts:59</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>favorito para guardar variable temporalmente.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="idfavorito"></a>
+                        <span class="name">
+                            <b>
+                            idfavorito</b>
+                            <a href="#idfavorito"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/peluquero/peluquero.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>guarda el idfavorito del peluquero en relacion con el cliente.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="minDate"></a>
+                        <span class="name">
+                            <b>
+                            minDate</b>
+                            <a href="#minDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/app/peluquero/peluquero.component.ts:75</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Fecha minima valida para el formulario.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="myFilter"></a>
+                        <span class="name">
+                            <b>
+                            myFilter</b>
+                            <a href="#myFilter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/peluquero/peluquero.component.ts:79</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Filtro del formulario de fechas.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="peluqueria"></a>
+                        <span class="name">
+                            <b>
+                            peluqueria</b>
+                            <a href="#peluqueria"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Establecimiento.html" target="_self" >Establecimiento</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/peluquero/peluquero.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>establecimiento del peluquero.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="peluquero"></a>
+                        <span class="name">
+                            <b>
+                            peluquero</b>
+                            <a href="#peluquero"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Peluquero.html" target="_self" >Peluquero</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/peluquero/peluquero.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>peluquero para mostrar sus datos.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="resenas"></a>
+                        <span class="name">
+                            <b>
+                            resenas</b>
+                            <a href="#resenas"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;ResenaPelu&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/peluquero/peluquero.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Lista de reseñas del peluquero.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ThemePalette } from &#x27;@angular/material/core&#x27;;
+import { MatDatepickerInputEvent } from &#x27;@angular/material/datepicker&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { ActivatedRoute, CanActivate, Router } from &#x27;@angular/router&#x27;;
+import { DialogCitaComponent } from &#x27;../dialog-cita/dialog-cita.component&#x27;;
+import { DialogResenaComponent } from &#x27;../dialog-resena/dialog-resena.component&#x27;;
+import { Hora } from &#x27;../interfaces/cita&#x27;;
+import { Establecimiento } from &#x27;../interfaces/establecimiento&#x27;;
+import { Foto } from &#x27;../interfaces/foto&#x27;;
+import { Peluquero } from &#x27;../interfaces/peluquero&#x27;;
+import { ResenaPelu } from &#x27;../interfaces/resena&#x27;;
+import { AlertasService } from &#x27;../servicios/alertas.service&#x27;;
+import { AuntenticadorJWTService } from &#x27;../servicios/auntenticador-jwt.service&#x27;;
+import { ServicioCitasService } from &#x27;../servicios/servicio-citas.service&#x27;;
+import { ServicioEstablecimientosService } from &#x27;../servicios/servicio-establecimientos.service&#x27;;
+import { ServicioFavoritosService } from &#x27;../servicios/servicio-favoritos.service&#x27;;
+import { ServicioFotoService } from &#x27;../servicios/servicio-foto.service&#x27;;
+import { ServicioPeluquerosService } from &#x27;../servicios/servicio-peluqueros.service&#x27;;
+import { ServicioResenasService } from &#x27;../servicios/servicio-resenas.service&#x27;;
+
+/**
+ * Componente que se encarga de mostrar la interfaz del perfil de un peluquero.
+ */
+@Component({
+  selector: &#x27;app-peluquero&#x27;,
+  templateUrl: &#x27;./peluquero.component.html&#x27;,
+  styleUrls: [&#x27;./peluquero.component.css&#x27;]
+})
+export class PeluqueroComponent implements OnInit, CanActivate {
+
+/**
+ * peluquero para mostrar sus datos.
+ */
+  peluquero: Peluquero;
+/**
+ * establecimiento del peluquero.
+ */
+  peluqueria: Establecimiento;
+/**
+ * Lista de fotos del peluquero.
+ */
+  fotos: Array&lt;Foto&gt;;
+/**
+ * Lista de reseñas del peluquero.
+ */
+  resenas: Array&lt;ResenaPelu&gt;;
+/**
+ * Lista de citas según el horario del peluquero.
+ */
+  citas: Array&lt;Hora&gt;;
+/**
+ * guarda el idfavorito del peluquero en relacion con el cliente.
+ */
+  idfavorito: number &#x3D; 0;
+  /**
+ * favorito para guardar variable temporalmente.
+ */
+  idfav2: number;
+/**
+ * variable que contiene el color de fondo del menu de pestañas.
+ */
+  background: ThemePalette &#x3D; undefined;
+/**
+ * Variable que contiene el color de las pestañas.
+ */
+  color: ThemePalette &#x3D; &quot;warn&quot;;
+/**
+ * Guarda la fecha elegida en el formulario temporalmente.
+ */
+  fecha: Date;
+/**
+ * Fecha minima valida para el formulario.
+ */
+  minDate: Date;
+/**
+ * Filtro del formulario de fechas.
+ */
+  myFilter &#x3D; (d: Date | null): boolean &#x3D;&gt; {
+    const day &#x3D; (d || new Date()).getDay();
+    // Prevent Saturday from being selected.
+    return day !&#x3D;&#x3D; 0;
+  }
+
+/**
+ * Metodo constructor de la clase
+ *
+ * @param {ServicioEstablecimientosService} servicioPeluqueria Servicio inyectado de establecimientos.
+ * @param {ServicioPeluquerosService} servicioPeluquero  Servicio inyectado de peluqueros.
+ * @param {ServicioResenasService} servicioResena  Servicio inyectado de reseñas.
+ * @param {ServicioFavoritosService} servicioFav  Servicio inyectado de favoritos.
+ * @param {ServicioFotoService} servicioFotos  Servicio inyectado de fotos.
+ * @param {ActivatedRoute} rutaActiva  Obtiene los parametros de la ruta.
+ * @param {MatDialog} dialog Servicio inyectado para abrir ventanas dialog.
+ * @param {AlertasService} servicioAlertas Servicio inyectado de alertas.
+ * @param {Router} route Servicio inyectado para la navegacion.
+ * @param {AuntenticadorJWTService} servicioJWT Servicio inyectado para adminstrar los tokens.
+ */
+  constructor(private servicioAlertas: AlertasService, private rutaActiva: ActivatedRoute, private servicioPeluquero: ServicioPeluquerosService, private servicioResena: ServicioResenasService, private servicioCitas: ServicioCitasService, private servicioFotos: ServicioFotoService,
+    private dialog: MatDialog, private servicioFav: ServicioFavoritosService, private route: Router, private servicioPeluqueria: ServicioEstablecimientosService, private servicioJWT: AuntenticadorJWTService) {
+    this.fotos &#x3D; new Array&lt;Foto&gt;();
+    this.resenas &#x3D; new Array&lt;ResenaPelu&gt;();
+    this.citas &#x3D; new Array&lt;Hora&gt;();
+    this.minDate &#x3D; new Date();
+    this.canActivate();
+   }
+  
+  /**
+ * Metodo OnInit que se encarga de cargar los datos del peluquero al estar listo los componentes angular.
+ */
+  ngOnInit(): void {
+    this.rutaActiva.params.subscribe(params &#x3D;&gt; {
+      this.obtenerDatosPeluquero(params as Peluquero);
+    });
+  }
+
+  /**
+ * Metodo guardian que decide si se puede acceder o no a este componente
+ * 
+ * @returns Boolean true o false dependiendo si puedes acceder al componente o no
+ */
+  canActivate() {
+    if (this.servicioJWT.recuperaJWT() &#x3D;&#x3D; null) {
+      this.route.navigate([&#x27;/&#x27;]);
+      this.servicioAlertas.openSnackBar(&quot;Primero Inicia sesión&quot;);
+      return false;
+    }
+    else {
+      return true;
+    }
+  }
+
+  /**
+ * Metodo que se encarga de comprobar si un favorito existe y devolverlo.
+ */
+  obtenerFavorito(id: number) {
+    this.servicioFav.getFavorito(id).subscribe(data &#x3D;&gt; {
+      if (data !&#x3D; null) {
+        this.idfavorito &#x3D; data.idfav;
+      }
+    });
+  }
+
+  /**
+ * Metodo que carga los datos del peluquero del servicio.
+ */
+  obtenerDatosPeluquero(peluquero: Peluquero) {
+    this.servicioPeluquero.getPeluquero(peluquero.idpeluquero).subscribe(data &#x3D;&gt; {
+      if (data[&quot;result&quot;] &#x3D;&#x3D; &quot;fail&quot;) {
+        this.servicioAlertas.openSnackBar(&quot;Imposible obtener datos del peluquero&quot;)
+      }
+      else {
+        this.peluquero &#x3D; data;
+        this.cargarDatosResenas(this.peluquero.idpeluquero);
+        this.cargarDatosFotos(this.peluquero.idpeluquero);
+        this.cargarDatosPeluqueria(this.peluquero.idestablecimiento);
+        this.obtenerFavorito(this.peluquero.idpeluquero);
+      }
+    })
+  }
+
+  /**
+ * Metodo que carga los datos de reseñas en la lista de navida.
+ */
+  cargarDatosResenas(id: number) {
+    this.resenas.splice(0, this.resenas.length);
+    this.servicioResena.getResenasPelu(id).subscribe(data &#x3D;&gt; {
+      if (data[&quot;result&quot;] &#x3D;&#x3D; &quot;fail&quot;) {
+        this.servicioAlertas.openSnackBar(&quot;Imposible obtener reseñas del peluquero&quot;)
+      }
+      else {
+        data.resenas.forEach(resena &#x3D;&gt; this.resenas.push(resena));
+      }
+    })
+  }
+  
+  /**
+ * Metodo que carga los datos de las fotos en la lista.
+ */
+  cargarDatosFotos(id: number) {
+    this.servicioFotos.getFotos(id).subscribe(data &#x3D;&gt; {
+      if (data[&quot;result&quot;] &#x3D;&#x3D; &quot;fail&quot;) {
+        this.servicioAlertas.openSnackBar(&quot;Imposible obtener fotos del peluquero&quot;)
+      }
+      else {
+        data.fotos.forEach(foto &#x3D;&gt; this.fotos.push(foto));
+      }
+    })
+  }
+
+  /**
+ * Metodo que carga los datos de la peluqueria desde el servicio.
+ */
+  cargarDatosPeluqueria(id: number) {
+    this.servicioPeluqueria.getPeluqueria(id).subscribe(data &#x3D;&gt; {
+      this.peluqueria &#x3D; data;
+    });
+  }
+
+  /**
+ * Metodo que abre una ventana dialog del componente DialogResenaComponent.
+ */
+  openDialogResena(): void {
+    const dialogRef &#x3D; this.dialog.open(DialogResenaComponent, {
+      data: {
+        idpelu: this.peluquero.idpeluquero
+      },
+      width: &#x27;250px&#x27;
+    });
+    dialogRef.afterClosed().subscribe(result &#x3D;&gt; {
+      console.log(&#x27;The dialog was closed&#x27;);
+      this.cargarDatosResenas(this.peluquero.idpeluquero);
+    });
+  }
+
+  /**
+ * Metodo que elimina o guarda un peluquero en favoritos del usuario
+ */
+  switchFavorito() {
+    if (this.idfavorito !&#x3D; 0) {
+      this.servicioFav.eliminarFavorito(this.idfavorito).subscribe(data &#x3D;&gt; {
+        this.servicioAlertas.openSnackBar(&quot;Ya no es favorito&quot;);
+      });
+      this.idfavorito &#x3D; 0;
+    }
+    else {
+      this.servicioFav.crearFavorito(this.peluquero.idpeluquero).subscribe(data &#x3D;&gt; {
+        this.servicioAlertas.openSnackBar(&quot;Peluquero guardado en favoritos&quot;);
+        this.idfav2 &#x3D; data.idfav;
+      });
+      this.idfavorito &#x3D; this.idfav2;
+    }
+  }
+
+  /**
+ * Metodo que abre una ventana dialog del componente DialogCitaComponent.
+ */
+  obtenerCita(cita: Hora) {
+    if (cita.estado &#x3D;&#x3D; false) {
+      const dialogRef &#x3D; this.dialog.open(DialogCitaComponent, {
+        data: {
+          hora: cita.hora,
+          fecha: this.fecha,
+          idpelu: this.peluquero.idpeluquero
+        },
+        width: &#x27;250px&#x27;
+      });
+      dialogRef.afterClosed().subscribe(result &#x3D;&gt; {
+        console.log(&#x27;The dialog was closed&#x27;);
+        if (result &#x3D;&#x3D; true) {
+          this.citas.splice(0, this.citas.length);
+          this.servicioCitas.getCitasPeluFecha(this.peluquero.idpeluquero, this.fecha).subscribe(data &#x3D;&gt; {
+            data.resultados.forEach(cita &#x3D;&gt; this.citas.push(cita));
+          });
+        }
+      });
+    }
+    else {
+      this.servicioAlertas.openSnackBar(&quot;Esta cita ya esta ocupada&quot;)
+    }
+  }
+
+  /**
+ * Metodo que navega hacia el componente establecimiento.component.
+ */
+  toPeluqueria() {
+    this.route.navigate([&#x27;establecimiento/peluqueria&#x27;, this.peluqueria]);
+  }
+
+  /**
+ * Evento que se llama al elegir una fecha en el calendario y muestra una lista de citas en funcion a la fecha elegida.
+ * 
+ * @param {MatDatepickerInputEvent} event evento con los datos del formulario DatePicker.
+ */
+  addEvent(event: MatDatepickerInputEvent&lt;Date&gt;) {
+    this.fecha &#x3D; event.value;
+    this.citas.splice(0, this.citas.length);
+    this.servicioCitas.getCitasPeluFecha(this.peluquero.idpeluquero, event.value).subscribe(data &#x3D;&gt; {
+        data.resultados.forEach(cita &#x3D;&gt; this.citas.push(cita));
+    });
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-grid-list cols&#x3D;&quot;2&quot; rowHeight&#x3D;&quot;6:1&quot; class&#x3D;&quot;headerPelu&quot;&gt;
+    &lt;mat-grid-tile [colspan]&#x3D;&quot;2&quot;&gt;
+        &lt;p&gt;{{peluquero.usuario}}&lt;/p&gt;
+        &lt;p&gt;{{peluquero.nombre}}&lt;/p&gt;
+        &lt;p&gt;{{peluquero.email}}&lt;/p&gt;
+        &lt;p *ngIf&#x3D;&quot;peluquero.establecimiento !&#x3D; null&quot;&gt;{{peluquero.establecimiento}}&lt;/p&gt;
+        &lt;p&gt;
+            &lt;button mat-raised-button (click)&#x3D;&quot;toPeluqueria()&quot; class&#x3D;&quot;citaLista&quot;&gt;
+                Ver peluqueria
+            &lt;/button&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;button mat-raised-button (click)&#x3D;&quot;switchFavorito()&quot; [ngClass]&#x3D;&quot;{&#x27;citaLista&#x27;: idfavorito &#x3D;&#x3D; 0, &#x27;btnSinFav&#x27;: idfavorito !&#x3D; 0}&quot;&gt;
+                {{idfavorito | pipeFav}}
+                &lt;mat-icon *ngIf&#x3D;&quot;idfavorito !&#x3D; 0&quot;&gt;favorite&lt;/mat-icon&gt;
+            &lt;/button&gt;
+        &lt;/p&gt;
+    &lt;/mat-grid-tile&gt;
+&lt;/mat-grid-list&gt;
+&lt;mat-tab-group dynamicHeight [backgroundColor]&#x3D;&quot;background&quot; [color]&#x3D;&quot;color&quot;&gt;
+    &lt;mat-tab label&#x3D;&quot;Fotos&quot;&gt;
+        &lt;div *ngIf&#x3D;&quot;fotos.length &gt; 0&quot;&gt;
+            &lt;mat-nav-list class&#x3D;&quot;fotoContainer&quot;&gt;
+                &lt;div *ngFor&#x3D;&quot;let foto of fotos&quot;&gt;
+                    &lt;img src&#x3D;&quot;{{&#x27;data:image/png;base64,&#x27; + foto.src}}&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;fotoPelu&quot;&gt; &lt;!--obtener imagenes blob del servidor--&gt;
+                &lt;/div&gt;
+            &lt;/mat-nav-list&gt;
+        &lt;/div&gt;
+        &lt;div *ngIf&#x3D;&quot;fotos.length &#x3D;&#x3D; 0&quot;&gt;
+            &lt;p class&#x3D;&quot;sinResultados&quot;&gt;El peluquero no ha subido fotos aun.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/mat-tab&gt;
+    &lt;mat-tab label&#x3D;&quot;Reseñas&quot;&gt;
+        &lt;mat-nav-list&gt;
+            &lt;div class&#x3D;&quot;divBtnResena&quot;&gt;
+                &lt;button mat-raised-button class&#x3D;&quot;citaLista&quot; (click)&#x3D;&quot;openDialogResena()&quot;&gt;
+                    Crear reseña
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;resenas.length &gt; 0&quot;&gt;
+                &lt;mat-card  *ngFor&#x3D;&quot;let resena of resenas&quot; class&#x3D;&quot;citaLista&quot;&gt;
+                    &lt;mat-card-header&gt;
+                        &lt;mat-card-header&gt;
+                            &lt;mat-card-title&gt;
+                                Reseña:
+                            &lt;/mat-card-title&gt;
+                        &lt;/mat-card-header&gt;
+                        &lt;mat-card-content&gt;
+                            &lt;p&gt;De: {{resena.cliente}}&lt;/p&gt;
+                            &lt;p&gt;{{resena.fecha | date:&quot;MMM dd, y&quot;}}&lt;/p&gt;
+                            &lt;p&gt;{{resena.contenido}}&lt;/p&gt;
+                            &lt;p&gt;Valoración: {{resena.valoracion}}/5&lt;/p&gt;
+                        &lt;/mat-card-content&gt;
+                    &lt;/mat-card-header&gt;
+                &lt;/mat-card&gt;
+            &lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;resenas.length &#x3D;&#x3D; 0&quot;&gt;
+                &lt;p class&#x3D;&quot;sinResultados&quot;&gt;No existen reseñas de este peluquero.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/mat-nav-list&gt;
+    &lt;/mat-tab&gt;
+    &lt;mat-tab label&#x3D;&quot;Citas&quot;&gt;
+        &lt;mat-nav-list&gt;
+            &lt;div class&#x3D;&quot;divBtnResena&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;example-full-width&quot; appearance&#x3D;&quot;fill&quot;&gt;
+                    &lt;mat-label&gt;Introduzca una fecha&lt;/mat-label&gt;
+                    &lt;input matInput [matDatepicker]&#x3D;&quot;picker&quot; [matDatepickerFilter]&#x3D;&quot;myFilter&quot; [min]&#x3D;&quot;minDate&quot; (dateInput)&#x3D;&quot;addEvent($event)&quot;&gt;
+                    &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                    &lt;mat-datepicker touchUi #picker&gt;&lt;/mat-datepicker&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;citas.length &gt; 0&quot;&gt;
+                &lt;mat-card  *ngFor&#x3D;&quot;let cita of citas&quot; [ngClass]&#x3D;&quot;{&#x27;horaLista&#x27;: cita.estado &#x3D;&#x3D; false, &#x27;horaOcupada&#x27;: cita.estado &#x3D;&#x3D; true}&quot; (click)&#x3D;&quot;obtenerCita(cita)&quot;&gt;
+                    &lt;mat-card-header&gt;
+                            &lt;mat-card-title&gt;
+                                &lt;p&gt;
+                                    {{cita.hora | hora}}
+                                &lt;/p&gt;
+                            &lt;/mat-card-title&gt;
+                    &lt;/mat-card-header&gt;
+                &lt;/mat-card&gt;
+            &lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;citas.length &#x3D;&#x3D; 0&quot;&gt;
+                &lt;p class&#x3D;&quot;sinResultados&quot;&gt;Introduzca una fecha.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/mat-nav-list&gt;
+    &lt;/mat-tab&gt;
+  &lt;/mat-tab-group&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./peluquero.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-grid-list cols="2" rowHeight="6:1" class="headerPelu">    <mat-grid-tile [colspan]="2">        <p>{{peluquero.usuario}}</p>        <p>{{peluquero.nombre}}</p>        <p>{{peluquero.email}}</p>        <p *ngIf="peluquero.establecimiento != null">{{peluquero.establecimiento}}</p>        <p>            <button mat-raised-button (click)="toPeluqueria()" class="citaLista">                Ver peluqueria            </button>        </p>        <p>            <button mat-raised-button (click)="switchFavorito()" [ngClass]="{\'citaLista\': idfavorito == 0, \'btnSinFav\': idfavorito != 0}">                {{idfavorito | pipeFav}}                <mat-icon *ngIf="idfavorito != 0">favorite</mat-icon>            </button>        </p>    </mat-grid-tile></mat-grid-list><mat-tab-group dynamicHeight [backgroundColor]="background" [color]="color">    <mat-tab label="Fotos">        <div *ngIf="fotos.length > 0">            <mat-nav-list class="fotoContainer">                <div *ngFor="let foto of fotos">                    <img src="{{\'data:image/png;base64,\' + foto.src}}" alt="" class="fotoPelu"> <!--obtener imagenes blob del servidor-->                </div>            </mat-nav-list>        </div>        <div *ngIf="fotos.length == 0">            <p class="sinResultados">El peluquero no ha subido fotos aun.</p>        </div>    </mat-tab>    <mat-tab label="Reseñas">        <mat-nav-list>            <div class="divBtnResena">                <button mat-raised-button class="citaLista" (click)="openDialogResena()">                    Crear reseña                </button>            </div>            <div *ngIf="resenas.length > 0">                <mat-card  *ngFor="let resena of resenas" class="citaLista">                    <mat-card-header>                        <mat-card-header>                            <mat-card-title>                                Reseña:                            </mat-card-title>                        </mat-card-header>                        <mat-card-content>                            <p>De: {{resena.cliente}}</p>                            <p>{{resena.fecha | date:"MMM dd, y"}}</p>                            <p>{{resena.contenido}}</p>                            <p>Valoración: {{resena.valoracion}}/5</p>                        </mat-card-content>                    </mat-card-header>                </mat-card>            </div>            <div *ngIf="resenas.length == 0">                <p class="sinResultados">No existen reseñas de este peluquero.</p>            </div>        </mat-nav-list>    </mat-tab>    <mat-tab label="Citas">        <mat-nav-list>            <div class="divBtnResena">                <mat-form-field class="example-full-width" appearance="fill">                    <mat-label>Introduzca una fecha</mat-label>                    <input matInput [matDatepicker]="picker" [matDatepickerFilter]="myFilter" [min]="minDate" (dateInput)="addEvent($event)">                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>                    <mat-datepicker touchUi #picker></mat-datepicker>                </mat-form-field>            </div>            <div *ngIf="citas.length > 0">                <mat-card  *ngFor="let cita of citas" [ngClass]="{\'horaLista\': cita.estado == false, \'horaOcupada\': cita.estado == true}" (click)="obtenerCita(cita)">                    <mat-card-header>                            <mat-card-title>                                <p>                                    {{cita.hora | hora}}                                </p>                            </mat-card-title>                    </mat-card-header>                </mat-card>            </div>            <div *ngIf="citas.length == 0">                <p class="sinResultados">Introduzca una fecha.</p>            </div>        </mat-nav-list>    </mat-tab>  </mat-tab-group></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BuscadorEstablecimientoComponent', 'selector': 'app-buscador-establecimiento'},{'name': 'BuscadorPeluqueroComponent', 'selector': 'app-buscador-peluquero'},{'name': 'CitaComponent', 'selector': 'app-cita'},{'name': 'DialogCitaComponent', 'selector': 'app-dialog-cita'},{'name': 'DialogIniciarComponent', 'selector': 'app-dialog-iniciar'},{'name': 'DialogRegistrarComponent', 'selector': 'app-dialog-registrar'},{'name': 'DialogResenaComponent', 'selector': 'app-dialog-resena'},{'name': 'DialogUpdateComponent', 'selector': 'app-dialog-update'},{'name': 'EstablecimientoComponent', 'selector': 'app-establecimiento'},{'name': 'FavoritoComponent', 'selector': 'app-favorito'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'ListaCitasComponent', 'selector': 'app-lista-citas'},{'name': 'ListaFavoritosComponent', 'selector': 'app-lista-favoritos'},{'name': 'ListaResenaComponent', 'selector': 'app-lista-resena'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'PeluqueroComponent', 'selector': 'app-peluquero'},{'name': 'PrincipalComponent', 'selector': 'app-principal'},{'name': 'ResenaComponent', 'selector': 'app-resena'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'PeluqueroComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PeluqueroComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

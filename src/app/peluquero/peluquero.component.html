@@ -1,0 +1,88 @@
+<mat-grid-list cols="2" rowHeight="6:1" class="headerPelu">
+    <mat-grid-tile [colspan]="2">
+        <p>{{peluquero.usuario}}</p>
+        <p>{{peluquero.nombre}}</p>
+        <p>{{peluquero.email}}</p>
+        <p *ngIf="peluquero.establecimiento != null">{{peluquero.establecimiento}}</p>
+        <p>
+            <button mat-raised-button (click)="toPeluqueria()" class="citaLista">
+                Ver peluqueria
+            </button>
+        </p>
+        <p>
+            <button mat-raised-button (click)="switchFavorito()" [ngClass]="{'citaLista': idfavorito == 0, 'btnSinFav': idfavorito != 0}">
+                {{idfavorito | pipeFav}}
+                <mat-icon *ngIf="idfavorito != 0">favorite</mat-icon>
+            </button>
+        </p>
+    </mat-grid-tile>
+</mat-grid-list>
+<mat-tab-group dynamicHeight [backgroundColor]="background" [color]="color">
+    <mat-tab label="Fotos">
+        <div *ngIf="fotos.length > 0">
+            <mat-nav-list class="fotoContainer">
+                <div *ngFor="let foto of fotos">
+                    <img src="{{'data:image/png;base64,' + foto.src}}" alt="" class="fotoPelu"> <!--obtener imagenes blob del servidor-->
+                </div>
+            </mat-nav-list>
+        </div>
+        <div *ngIf="fotos.length == 0">
+            <p class="sinResultados">El peluquero no ha subido fotos aun.</p>
+        </div>
+    </mat-tab>
+    <mat-tab label="Reseñas">
+        <mat-nav-list>
+            <div class="divBtnResena">
+                <button mat-raised-button class="citaLista" (click)="openDialogResena()">
+                    Crear reseña
+                </button>
+            </div>
+            <div *ngIf="resenas.length > 0">
+                <mat-card  *ngFor="let resena of resenas" class="citaLista">
+                    <mat-card-header>
+                        <mat-card-header>
+                            <mat-card-title>
+                                Reseña:
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>De: {{resena.cliente}}</p>
+                            <p>{{resena.fecha | date:"MMM dd, y"}}</p>
+                            <p>{{resena.contenido}}</p>
+                            <p>Valoración: {{resena.valoracion}}/5</p>
+                        </mat-card-content>
+                    </mat-card-header>
+                </mat-card>
+            </div>
+            <div *ngIf="resenas.length == 0">
+                <p class="sinResultados">No existen reseñas de este peluquero.</p>
+            </div>
+        </mat-nav-list>
+    </mat-tab>
+    <mat-tab label="Citas">
+        <mat-nav-list>
+            <div class="divBtnResena">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Introduzca una fecha</mat-label>
+                    <input matInput [matDatepicker]="picker" [matDatepickerFilter]="myFilter" [min]="minDate" (dateInput)="addEvent($event)">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div *ngIf="citas.length > 0">
+                <mat-card  *ngFor="let cita of citas" [ngClass]="{'horaLista': cita.estado == false, 'horaOcupada': cita.estado == true}" (click)="obtenerCita(cita)">
+                    <mat-card-header>
+                            <mat-card-title>
+                                <p>
+                                    {{cita.hora | hora}}
+                                </p>
+                            </mat-card-title>
+                    </mat-card-header>
+                </mat-card>
+            </div>
+            <div *ngIf="citas.length == 0">
+                <p class="sinResultados">Introduzca una fecha.</p>
+            </div>
+        </mat-nav-list>
+    </mat-tab>
+  </mat-tab-group>

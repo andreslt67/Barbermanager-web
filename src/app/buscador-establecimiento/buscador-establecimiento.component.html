@@ -1,0 +1,26 @@
+<p>
+    <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Buscar peluquerias...</mat-label>
+        <input matInput type="text" [(ngModel)]="termino">
+        <button mat-icon-button matSuffix (click)="buscarPeluquerias()" [attr.aria-label]="'Hide password'">
+            <mat-icon>search</mat-icon>
+        </button>
+    </mat-form-field>
+</p>
+<div *ngIf="peluquerias.length > 0">
+    <mat-nav-list>
+        <mat-card  *ngFor="let peluqueria of peluquerias" class="cardBuscador">
+            <mat-card-header>
+                <p>{{peluqueria.direccion}}</p>
+            </mat-card-header>
+            <mat-card-actions>
+                <button mat-raised-button (click)="toPeluqueria(peluqueria)">
+                    Ver Peluqueria
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-nav-list>
+</div>
+<div *ngIf="peluquerias.length == 0">
+    <p class="sinResultados">No se encontraron resultados.</p>
+</div>

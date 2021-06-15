@@ -1,0 +1,6 @@
+<div *ngIf="citas.length > 0">
+    <app-cita *ngFor="let cita of citas" [cita]="cita" (citaCancelada)="cancelarCita($event)"></app-cita>
+</div>
+<div *ngIf="citas.length == 0">
+    <p class="sinResultadosDiv">No tienes citas pendientes.</p>
+</div>

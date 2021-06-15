@@ -1,0 +1,26 @@
+<mat-grid-list cols="2" rowHeight="5:1" class="tituloBienvenida">
+    <mat-grid-tile [colspan]="2">
+        <p>Dirección: {{establecimiento.direccion}} <br/> Teléfono: {{establecimiento.telefono}} <br/>Abre: {{establecimiento.horaInicio | hora}}, Cierra: {{establecimiento.horaFin | hora}}</p>
+    </mat-grid-tile>
+</mat-grid-list>
+<mat-tab-group dynamicHeight [backgroundColor]="background" [color]="color">
+    <mat-tab label="Peluqueros">
+        <div *ngIf="peluqueros.length > 0">
+            <mat-nav-list>
+                <mat-card  *ngFor="let peluquero of peluqueros" class="citaLista">
+                    <mat-card-header>
+                        <p><strong>{{peluquero.usuario}}</strong> <br/><br/> {{peluquero.nombre}}</p>
+                    </mat-card-header>
+                    <mat-card-actions>
+                        <button mat-raised-button (click)="toPeluquero(peluquero)">
+                            Ver Peluquero
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </mat-nav-list>
+        </div>
+        <div *ngIf="peluqueros.length == 0">
+            <p class="sinResultados">En este establecimiento aun no trabajan peluqueros.</p>
+        </div>
+    </mat-tab>
+  </mat-tab-group>

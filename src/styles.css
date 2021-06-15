@@ -1,1 +1,156 @@
-/* You can add global styles to this file, and also import other style files */
+.containerTitulo {
+    text-align: center;
+    margin: 15px;
+}
+.navBar {
+    background-color: darkred;
+    color: white;
+}
+.gridTileBack {
+    background-image: url(assets/img/fondoBarberia2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.entrebtn {
+    color: darkred;
+}
+
+.tituloBienvenida {
+    background-color: rgb(189, 189, 189);
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.tab {
+    background-color: darkred;
+}
+
+.citaLista {
+    background-color: darkred;
+    color: white;
+    margin: 20px;
+}
+
+.citaLista button {
+    color: darkred;
+}
+
+.citaOcupada {
+    background-color: darkslategray;
+    color: white;
+    margin: 20px;
+}
+
+.horaOcupada {
+    background-color: darkslategray;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.horaLista {
+    background-color: darkred;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.horaLista p{
+    text-align: center;
+}
+
+#sidenav {
+    width: 350px;
+    background-color: rgb(189, 189, 189);
+}
+
+.opcionMenu {
+    font-weight: bolder;
+}
+
+.cardPerfil button {
+    background-color: darkred;
+    color: white;
+}
+
+.cardPerfil form {
+    width: 800px;
+}
+
+.formInput {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.formInput button{
+    background-color: darkred;
+    color: white;
+}
+
+.snackBar {
+    background-color: darkred;
+    color:white;
+}
+
+.snackBar button {
+    color: white;
+}
+
+.cardBuscador {
+    background-color: darkred;
+    color: white;
+    margin: 10px;
+}
+
+.cardBuscador button {
+    color: darkred;
+}
+
+.sinResultados {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.sinResultadosDiv {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.fotoContainer {
+    margin-left: 40px;
+}
+
+.fotoPelu {
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin: 5px;
+}
+
+.divBtnResena {
+    margin: 20px;
+}
+
+.headerPelu {
+    background-color: rgb(189, 189, 189);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.headerPelu p{
+    margin: 15px;
+}
+
+.btnSinFav {
+    background-color: white;
+    color: darkred;
+}
+
+.containerMin {
+    min-height: 600px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

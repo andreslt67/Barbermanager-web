@@ -1,0 +1,19 @@
+<mat-card class="citaLista">
+    <mat-card-header>
+        <mat-card-title>
+            Reseña:
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Para: {{resena.peluquero}}</p>
+        <p>{{resena.fecha | date:"MMM dd, y"}}</p>
+        <p>{{resena.contenido}}</p>
+        <p>Valoración: {{resena.valoracion}}/5</p>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+        <button mat-raised-button (click)="eliminarResena()">
+            Eliminar Reseña
+        </button>
+    </mat-card-actions>
+</mat-card>

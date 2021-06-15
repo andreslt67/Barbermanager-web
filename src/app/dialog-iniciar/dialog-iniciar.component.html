@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Iniciar sesión</h1>
+<div mat-dialog-content>
+    <form [formGroup]="formLogin">
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Usuario</mat-label>
+                <input matInput type="text" formControlName='user' placeholder="usuario1234">
+                <mat-error *ngIf="formLogin.controls.user.invalid && formLogin.controls.user.dirty">Usuario no válido</mat-error>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Contraseña</mat-label>
+                <input matInput type="password" formControlName='password' placeholder="********">
+                <mat-error *ngIf="formLogin.controls.password.invalid && formLogin.controls.password.dirty">Contraseña no válida</mat-error>
+            </mat-form-field>
+        </p>
+    </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cerrar</button>
+  <button mat-button [disabled]="formLogin.controls.user.invalid || formLogin.controls.password.invalid" (click)="autenticaUsuario()">Iniciar sesión</button>
+</div>

@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Crear Reseña</h1>
+<div mat-dialog-content>
+    <form [formGroup]="formResena">
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Contenido</mat-label>
+                <input matInput type="text" formControlName='contenido'>
+                <mat-error *ngIf="formResena.controls.contenido.invalid && formResena.controls.contenido.dirty">Introduzca un valor</mat-error>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Valoración</mat-label>
+                <input matInput type="number" formControlName='valoracion'>
+                <mat-error *ngIf="formResena.controls.valoracion.invalid && formResena.controls.valoracion.dirty">Introduzca un valor</mat-error>
+                <mat-hint>Introduzca un valor del 1 al 5</mat-hint>
+            </mat-form-field>
+        </p>
+    </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cerrar</button>
+  <button mat-button [disabled]="formResena.controls.contenido.invalid || formResena.controls.valoracion.invalid" (click)="crearResena()">Crear Reseña</button>
+</div>

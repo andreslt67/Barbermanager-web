@@ -1,0 +1,17 @@
+<mat-card class="citaLista">
+    <mat-card-header>
+        <mat-card-title>
+            Favorito:
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Peluquero: {{favorito.peluquero}}</p>
+        <p>Establecimiento: {{favorito.establecimiento}}</p>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+        <button mat-raised-button (click)="toPeluquero()">
+            Ver Peluquero
+        </button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,6 @@
+<div *ngIf="resenas.length > 0">
+    <app-resena *ngFor="let resena of resenas" [resena]="resena" (resenaEliminada)="eliminarResena($event)"></app-resena>
+</div>
+<div *ngIf="resenas.length == 0">
+    <p class="sinResultadosDiv">No has hecho ninguna reseña.</p>
+</div>

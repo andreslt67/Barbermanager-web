@@ -1,0 +1,6 @@
+<div *ngIf="favoritos.length > 0">
+    <app-favorito *ngFor="let favorito of favoritos" [favorito]="favorito"></app-favorito>
+</div>
+<div *ngIf="favoritos.length == 0">
+    <p class="sinResultadosDiv">No tienes peluqueros favoritos.</p>
+</div>

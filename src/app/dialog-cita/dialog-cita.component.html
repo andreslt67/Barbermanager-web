@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Obtener cita</h1>
+<div mat-dialog-content>
+    <form [formGroup]="formCita">
+        <mat-form-field appearance="fill">
+            <mat-label>Servicio</mat-label>
+            <mat-select formControlName="selected">
+                <mat-option *ngFor="let servicio of servicios" [value]="servicio">
+                    {{servicio.nombre}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="formCita.controls.selected.invalid && formCita.controls.selected.dirty">Introduzca una opción</mat-error>
+        </mat-form-field>
+        <p> Precio: {{formCita.controls.selected.value?.precio}}€ <br/> Duración: {{formCita.controls.selected.value?.duracion}} Min</p>
+    </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cerrar</button>
+  <button mat-button [disabled]="formCita.controls.selected.invalid" (click)="obtenerCita()">Obtener</button>
+</div>

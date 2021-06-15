@@ -1,0 +1,50 @@
+<mat-grid-list cols="2">
+    <mat-grid-tile [colspan]="2">
+        <mat-card class="cardPerfil">
+            <mat-card-header>
+                <mat-card-title>
+                    <h1>Tu Perfil</h1>
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <form [formGroup]="formLogin"  >
+                    <p>
+                        <mat-form-field appearance="standard" class="formInput">
+                            <mat-label>Usuario</mat-label>
+                            <input matInput type="text" formControlName='user' [(ngModel)]="clienteOld.usuario"> <!-- ngModel para poner valor en el input -->
+                            <mat-error *ngIf="formLogin.controls.user.invalid && formLogin.controls.user.dirty">Usuario no válido</mat-error>
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field appearance="standard" class="formInput">
+                            <mat-label>Contraseña</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'" formControlName='password' [(ngModel)]="clienteOld.clave">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                            <mat-error *ngIf="formLogin.controls.password.invalid && formLogin.controls.password.dirty">Contraseña no válida</mat-error>
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field appearance="standard" class="formInput">
+                            <mat-label>Email</mat-label>
+                            <input matInput type="text" formControlName='email' [(ngModel)]="clienteOld.email">
+                            <mat-error *ngIf="formLogin.controls.email.invalid && formLogin.controls.email.dirty">Email no válido</mat-error>
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field appearance="standard" class="formInput">
+                            <mat-label>Nombre</mat-label>
+                            <input matInput type="text" formControlName='name' [(ngModel)]="clienteOld.nombre">
+                            <mat-error *ngIf="formLogin.controls.name.invalid && formLogin.controls.name.dirty">Nombre no válido</mat-error>
+                        </mat-form-field>
+                    </p>
+                </form>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button (click)="onNoClick()">Volver</button>
+                <button mat-raised-button [disabled]="formLogin.controls.user.invalid || formLogin.controls.password.invalid || formLogin.controls.email.invalid || formLogin.controls.name.invalid" (click)="updateUsuario()">Actualizar</button>
+            </mat-card-actions>
+        </mat-card>        
+    </mat-grid-tile>
+</mat-grid-list>
